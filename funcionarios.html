@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberWeb Solutions - Funcionários</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #2f1c6a;
+      text-align: center;
+      background-color: #f3e5f5; /* Fundo roxo claro */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto; /* Centraliza horizontalmente */
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: white; /* Fundo branco */
+      padding: 10px 0; /* Espaçamento interno */
+    }
+
+    h1 {
+      margin: 0; /* Remove margem padrão */
+      color: #2f1c6a; /* Cor do texto */
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Centraliza horizontalmente */
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #2f1c6a;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 19px;
+    }
+
+    nav ul li a:hover {
+      color: #2f1c6a; /* Cor permanente ao passar o mouse */
+    }
+
+    .employee-container {
+      display: flex;
+      justify-content: center; /* Centraliza horizontalmente */
+      margin-top: 50px;
+    }
+
+    .employee {
+      flex: 1;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .employee img {
+      width: 150px;
+      border-radius: 50%; /* Transforma a imagem em círculo */
+      margin-bottom: 20px;
+    }
+
+    .employee h2 {
+      font-size: 25px;
+      margin-bottom: 10px;
+      color: #673de6;
+    }
+
+    .employee p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CyberWeb Solutions</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="projetos.html">Serviços</a></li>
+      <li><a href="funcionarios.html">Funcionários</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Nossa Equipe</h2>
+  <div class="employee-container">
+    <div class="employee">
+      <img src="img/lucas.jpeg" alt="Foto Funcionário 1">
+      <h2>Lucas Levi Soares Silva</h2>
+      <p>Desenvolvedor Web Full Stack</p>
+      <p>Experiência: 2 anos</p>
+      <p>Tempo na empresa: 6 meses</p>
+    </div>
+
+    <div class="employee">
+      <img src="foto_funcionario2.jpg" alt="Foto Funcionário 2">
+      <h2>F. James da Silva Bezerra</h2>
+      <p>Analista de Segurança de Dados</p>
+      <p>Experiência: 2 anos</p>
+      <p>Tempo na empresa: 5 meses</p>
+    </div>
+
+    <div class="employee">
+      <img src="img/fabricio.jpeg" alt="Foto Funcionário 3">
+      <h2>Fabricio dos Santos Rocha</h2>
+      <p>Designer de Interface</p>
+      <p>Experiência: 2 anos</p>
+      <p>Tempo na empresa: 5 meses</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 CyberWeb Solutions. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

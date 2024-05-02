@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços - CyberWeb Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #2f1c6a;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto; /* Centraliza horizontalmente */
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: white; /* Fundo roxo */
+      padding: 10px 0; /* Espaçamento interno */
+    }
+
+    h1 {
+      margin: 0; /* Remove margem padrão */
+      color: #2f1c6a; /* Cor do texto */
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Centraliza horizontalmente */
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #2f1c6a;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 19px;
+    }
+
+    nav ul li a:hover {
+      color: #2f1c6a; /* Cor permanente ao passar o mouse */
+    }
+
+    .service-container {
+      display: flex;
+      flex-wrap: wrap; /* Permite que os serviços quebrem para a próxima linha */
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .service {
+      flex: 1;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: transform 0.3s ease;
+      border: 2px solid purple; /* Adiciona contorno roxo */
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+    }
+
+    .service h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: purple;
+    }
+
+    .service p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .service .price {
+      font-weight: bold;
+      font-size: 24px;
+      color: #2f1c6a;
+    }
+
+    .add-to-cart {
+      display: block;
+      margin-top: 20px;
+      background-color: #673de6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background-color: #6a1b9a; /* Altera a cor ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CyberWeb Solutions</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="projetos.html">Serviços</a></li>
+      <li><a href="funcionarios.html">Funcionários</a></li>
+      <li><a href="#contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Nossos Planos Mensais</h2>
+  <div class="service-container">
+    <div class="service">
+      <h2>Plano Básico</h2>
+      <p>Criação de Site Simples</p>
+      <p class="price"> R$ 500/mês</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="service">
+      <h2>Plano Padrão</h2>
+      <p>Criação de Site com Design Personalizado</p>
+      <p class="price"> R$ 1000/mês</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="service">
+      <h2>Plano Premium</h2>
+      <p>Criação de Site Personalizado + Análise de Segurança de Dados</p>
+      <p class="price"> R$ 1500/mês</p>
+      <button class="add-to-cart">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 CyberWeb Solutions. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

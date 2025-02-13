@@ -1,186 +1,163 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CyberWeb Solutions - Início</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      color: #2f1c6a;
-      text-align: center;
-      background-color: #f3e5f5; /* Fundo roxo claro */
-    }
-
-
-    .container2 {
-      max-width: 1200px;
-      margin: 0 auto; /* Centraliza horizontalmente */
-      padding: 20px;
-      font-size: large;
-      font-size: 18px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto; /* Centraliza horizontalmente */
-      padding: 20px;
-      font-size: large;
-      font-size: 22px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 20px;
-      background-color: white; /* Fundo branco */
-      padding: 10px 0; /* Espaçamento interno */
-    }
-
-    h1 {
-      margin: 0; /* Remove margem padrão */
-      color: #2f1c6a; /* Cor do texto */
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center; /* Centraliza horizontalmente */
-    }
-
-    nav ul li {
-      margin-right: 20px;
-    }
-
-    nav ul li:last-child {
-      margin-right: 0;
-    }
-
-    nav ul li a {
-      color: #2f1c6a;
-      text-decoration: none;
-      transition: color 0.3s ease;
-      font-size: 19px;
-    }
-
-    nav ul li a:hover {
-      color: #2f1c6a; /* Cor permanente ao passar o mouse */
-    }
-
-    .service-container {
-      display: flex;
-      flex-wrap: wrap; /* Permite que os serviços quebrem para a próxima linha */
-      justify-content: center; /* Centraliza horizontalmente */
-      align-items: center;
-      margin-top: 50px;
-    }
-
-    .service {
-      flex: 1;
-      margin: 20px;
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: left;
-      transition: transform 0.3s ease;
-      border: 2px solid purple; /* Adiciona contorno roxo */
-    }
-
-    .service:hover {
-      transform: scale(1.05);
-    }
-
-    .service h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: purple;
-    }
-
-    .service p {
-      font-size: 20px; /* Altera o tamanho da fonte */
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .service .price {
-      font-weight: bold;
-      font-size: 24px;
-      color: #2f1c6a;
-    }
-
-    .add-to-cart {
-      display: block;
-      margin-top: 20px;
-      background-color: #673de6;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .add-to-cart:hover {
-      background-color: #6a1b9a; /* Altera a cor ao passar o mouse */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Página inicial</title>
 </head>
+
 <body>
 
-<header>
-  <h1>CyberWeb Solutions</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="projetos.html">Serviços</a></li>
-      <li><a href="funcionarios.html">Funcionários</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.png">
+            </a>
+        </div>
 
-<div class="banner">
-  <img src="img/solution.png" alt="Banner da CyberWeb Solutions">
-</div>
+        <ul class="nav-links">
+            <li class="link"><a href="#home">Inicio</a></li>
+            <li id="link1" class="link"><a href="#features">Sobre</a></li>
+            <li id="link2" class="link"><a href="#pricing">Contratar</a></li>
+            <li id="link3" class="link"><a href="#about">Oferecer</a></li>
+        </ul>
+        <button class="btn" onclick="irParaCadastro()">Cadastrar</button>
+        <button class="btn2" onclick="irParaLogin()">Login</button>
+    </nav>
 
-<div class="container">
-  <h2>Bem-vindo à CyberWeb Solutions</h2>
-  <p class="container-text">Somos uma empresa especializada em criação de sites e análise de segurança de dados. Nossa missão é oferecer soluções inovadoras e seguras para nossos clientes.</p>
-</div>
+    <header class="container" id="home">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>SERVIÇOS PLUS</h4>
+            <H1>Tudo o que você <span>precisa</span> em um só lugar!</H1>
+            <p>
+                Nossa empresa de serviços possui um data center em Ceará, oferecendo alta disponibilidade e segurança. Contamos com proteção de ponta para garantir a integridade dos serviços oferecidos.
+            </p>
+            <button class="btn">Contrate já</button>
+        </div>
+        <div class="image">
+            <img src="img/header.png">
+        </div>
+    </header>
 
-<div class="container2">
-  <h2>Nossos Planos Mensais</h2>
-  <div class="service-container">
-    <div class="service">
-      <h2>Plano Básico</h2>
-      <p>Criação de Site Simples</p>
-      <p class="price"> R$ 500/mês</p>
-      <button class="add-to-cart">Entrar em contato</button>
+    <section class="container" id="features">
+        <h2 class="header">Tudo o que você deseja em um só lugar!</h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-money-dollar-box-line"></i></span>
+                <h4>Jardineiro</h4>
+                <p>
+                    Jardineiro freelancer especializado em cuidados e manutenção de jardins. Soluções eficientes para deixar seu espaço verde sempre bonito.
+                </p>
+                <a href="#">Contrate agora <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-bug-line"></i></span>
+                <h4>Pintor</h4>
+                <p>
+                    Pintor freelancer especializado em pintura interna e externa. Serviço de qualidade para renovar seu ambiente com eficiência e precisão.                 
+                </p>
+                <a href="#">Contrate agora <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-history-line"></i></span>
+                <h4>Pedreiro</h4>
+                <p>
+                    Pedreiro especializado em construção, reparos e acabamentos. Oferece serviços de qualidade e eficiência para obras residenciais e comerciais.
+                </p>
+                <a href="#">Contrate agora <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-shake-hands-line"></i></span>
+                <h4>Outros</h4>
+                <p>
+                    Freelancer especializado em diversas áreas, oferecendo soluções personalizadas e serviços de qualidade para atender suas necessidades
+                </p>
+                <a href="#">Veja mais <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="pricing">
+        <h2 class="header">Sobre os Freelancer</h2>
+        <p class="sub-header">
+            qualificados e confiáveis. Oferecemos um ambiente seguro para que você possa contratar profissionais experientes em diversas áreas.
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <h4>Serviços Personalizados para Suas Necessidades</h4>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Encontre profissionais qualificados para seus projetos, com soluções personalizadas e resultados rápidos. Aqui, você encontra o talento certo para sua necessidade!
+                    </p>
+                    <p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Diamond Plan</h4>
+                    <h3>200$</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Developer a website for your store, among others
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Pro codes
+                    </p>
+                </div>
+                <button class="btn">Join Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container" id="about">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <p>
+                Nossas Redes Sociais.
+            </p>
+            <div class="socials">
+                <a href="https://www.youtube.com/@luffyzin_br549" target="_blank"><i class="ri-youtube-line"></i></a>
+                <a href="https://www.instagram.com/zlz1n_/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://twitter.com/SoaresLevi3354" target="_blank"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Company</h4>
+            <a href="#">Business</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contate nós</a>
+            <a href="#">Politica de Privacidade</a>
+            <a href="#">Termos & Condições</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2025 ServiçosPlus. Todos os direitos reservados.
     </div>
 
-    <div class="service">
-      <h2>Plano Padrão</h2>
-      <p>Criação de Site com Design Personalizado</p>
-      <p class="price"> R$ 1000/mês</p>
-      <button class="add-to-cart">Entrar em contato</button>
-    </div>
 
-    <div class="service">
-      <h2>Plano Premium</h2>
-      <p>Criação de Site Personalizado + Análise de Segurança de Dados</p>
-      <p class="price"> R$ 1500/mês</p>
-      <button class="add-to-cart">Entrar em contato</button>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <p>&copy; 2024 CyberWeb Solutions. Todos os direitos reservados.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
+
 </html>

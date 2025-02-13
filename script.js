@@ -1,40 +1,37 @@
-// server.js
+function scrollToElement(elementSelector, instance = 0) {
+    // Select all elements that match the given selector
+    const elements = document.querySelectorAll(elementSelector);
+    // Check if there are elements matching the selector and if the requested instance exists
+    if (elements.length > instance) {
+        // Scroll to the specified instance of the element
+        elements[instance].scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
-const express = require('express');
-const bodyParser = require('body-parser');
+const link1 = document.getElementById("link1");
+const link2 = document.getElementById("link2");
+const link3 = document.getElementById("link3");
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-let tickets = []; // Array para armazenar os tickets de mensagens
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-// Rota para receber uma nova mensagem e criar um ticket
-app.post('/api/tickets', (req, res) => {
-  const { fullname, email, message } = req.body;
-  const newTicket = { id: tickets.length + 1, fullname, email, message, status: 'Aberto' };
-  tickets.push(newTicket);
-  res.status(201).json(newTicket);
+link1.addEventListener('click', () => {
+    scrollToElement('.header');
 });
 
-// Rota para obter todos os tickets de mensagens
-app.get('/api/tickets', (req, res) => {
-  res.json(tickets);
+link2.addEventListener('click', () => {
+    // Scroll to the second element with "header" class
+    scrollToElement('.header', 1);
 });
 
-// Rota para responder a um ticket específico
-app.post('/api/tickets/:id/resposta', (req, res) => {
-  const { id } = req.params;
-  const { resposta } = req.body;
-  const ticket = tickets.find(ticket => ticket.id === parseInt(id));
-  if (!ticket) return res.status(404).json({ message: 'Ticket não encontrado' });
-  ticket.resposta = resposta;
-  ticket.status = 'Fechado';
-  res.json(ticket);
+link3.addEventListener('click', () => {
+    scrollToElement('.column');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+
+        // Função para redirecionar para a página de Cadastro
+        function irParaCadastro() {
+            window.location.href = "cadastro.html"; // Substitua pelo URL da sua página de cadastro
+        }
+
+        // Função para redirecionar para a página de Login
+        function irParaLogin() {
+            window.location.href = "login.html"; // Substitua pelo URL da sua página de login
+        }
